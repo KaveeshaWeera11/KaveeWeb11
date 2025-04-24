@@ -1,0 +1,396 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(ellipse at bottom, #0f172a 0%, #020617 100%);
+    color: var(--text-light);
+    line-height: 1.8;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* ========== PREMIUM FAQ SECTION ========== */
+.faq-section {
+    padding: var(--section-spacing) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+    z-index: -1;
+    animation: float 20s linear infinite;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    background: linear-gradient(90deg, #f8fafc, #e2e8f0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-accent), var(--secondary-accent));
+    border-radius: 4px;
+}
+
+.faq-item {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25),
+                inset 0 0 0 1px var(--glass-border);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.faq-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3),
+                0 0 30px rgba(59, 130, 246, 0.3),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 2.5rem;
+    color: var(--primary-accent);
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-question::after {
+    content: '-';
+    transform: rotate(180deg);
+}
+
+.faq-question:hover {
+    color: var(--primary-accent);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                padding 0.6s ease;
+    padding: 0 3rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    font-size: 1.2rem;
+    border-top: 1px solid transparent;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 0 3rem 3rem;
+    border-top: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* ========== PREMIUM CONTACT FORM ========== */
+.contact-form-section {
+    padding: var(--section-spacing) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 70% 30%, rgba(239, 68, 68, 0.15) 0%, transparent 50%);
+    z-index: -1;
+    animation: floatReverse 20s linear infinite;
+}
+
+.contact-form {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 4rem;
+    border-radius: 25px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3),
+                inset 0 0 0 1px var(--glass-border);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid var(--glass-border);
+    color: var(--text-light);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.3);
+    background: rgba(30, 41, 59, 0.8);
+}
+
+textarea.form-control {
+    min-height: 220px;
+    resize: vertical;
+}
+
+/* ========== PREMIUM SUBMIT BUTTON ========== */
+.submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, var(--primary-accent), #dc2626);
+    color: white;
+    padding: 1.5rem 4rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 5px 20px rgba(239, 68, 68, 0.4);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+}
+
+.submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #dc2626, var(--primary-accent));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(239, 68, 68, 0.6);
+}
+
+.submit-btn:hover::before {
+    opacity: 1;
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.submit-btn i {
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover i {
+    transform: translateX(5px);
+}
+
+
+/* ========== ANIMATIONS ========== */
+@keyframes float {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(20px, 20px) rotate(5deg);
+    }
+    50% {
+        transform: translate(0, 40px) rotate(0deg);
+    }
+    75% {
+        transform: translate(-20px, 20px) rotate(-5deg);
+    }
+}
+
+@keyframes floatReverse {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(-20px, -20px) rotate(-5deg);
+    }
+    50% {
+        transform: translate(0, -40px) rotate(0deg);
+    }
+    75% {
+        transform: translate(20px, -20px) rotate(5deg);
+    }
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 1024px) {
+    :root {
+        --section-spacing: 6rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .contact-form {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --section-spacing: 5rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .faq-question {
+        padding: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .faq-answer {
+        font-size: 1.1rem;
+        padding: 0 2rem 2rem;
+    }
+
+    .contact-form {
+        padding: 2.5rem;
+    }
+
+    .form-control {
+        padding: 1.25rem;
+    }
+
+    .submit-btn {
+        padding: 1.25rem 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --section-spacing: 4rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .faq-question {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .faq-answer {
+        font-size: 1rem;
+        padding: 0 1.5rem 1.5rem;
+    }
+
+    .contact-form {
+        padding: 2rem;
+    }
+
+    .form-group label {
+        font-size: 1.1rem;
+    }
+
+    .form-control {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .submit-btn {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+.text-accent {
+    color: var(--primary-accent);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--primary-accent), var(--secondary-accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

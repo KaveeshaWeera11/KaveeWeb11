@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GameFusion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="Gamefusion logo/GameFusion.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<header>
+    <a href="./index.html">
+        <img src="Gamefusion-logo/GameFusion.png" alt="GameFusion Logo" class="logo">
+    </a>
+      
+    <!-- Menu button to toggle header -->
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+    <!-- Navbar -->
+    <nav>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./About_us.html">About Us</a></li>
+        <li><a href="./Upcoming_games.html">Upcoming Games</a></li>
+        <li class="dropdown">
+            <a href="./menu" class="dropdown-toggle">Accessories</a>
+            <ul class="dropdown-menu">
+                <li><a href="Consoles.html">Consoles</a></li>
+                <li><a href="Peripherals.html">Peripherals</a></li>
+            </ul>
+        </li>
+        <li><a href="./Games.html">Games</a></li>
+        <li><a href="./FAQ.html">FAQ</a></li>
+        <li><a href="./order.html" class="cart-icon-link">
+            <img src="cart/shopping-cart.png" alt="Order Cart" class="cart-icon" >
+        </a>
+        </li>
+    </ul>
+    </nav>
+</header>
+<body>
+    <section class="faq-section">
+        <div class="container">
+            <h1 class="section-title">Frequently Asked Questions</h1>
+            
+            <div class="faq-item">
+                <div class="faq-question">What is your return policy?</div>
+                <p class="faq-answer">
+                    We offer a 30-day money-back guarantee on all products. Items must be in their original condition with all packaging and accessories included. For defective products, we provide free return shipping and immediate replacement.
+                </p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do you offer free shipping?</div>
+                <p class="faq-answer">
+                    Yes! All orders over LKR 10,000 qualify for free express shipping. For orders below this amount, we offer flat-rate shipping at just LKR 500. All deliveries include full tracking and insurance coverage.
+                </p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I track my order?</div>
+                <p class="faq-answer">
+                    Absolutely. Once your order ships, you'll receive a confirmation email with your tracking number and a direct link to monitor your package's journey. Our system provides real-time updates from warehouse to your doorstep.
+                </p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What payment methods do you accept?</div>
+                <p class="faq-answer">
+                    We accept all major credit cards (Visa, MasterCard, American Express), PayPal, bank transfers, and cash on delivery. All transactions are securely processed with 256-bit SSL encryption for your protection.
+                </p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Do you offer international shipping?</div>
+                <p class="faq-answer">
+                    Currently, we ship to all regions in Sri Lanka with plans to expand internationally in 2025. For special international requests, please contact our customer service team who can arrange custom shipping solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2 class="section-title">Still Have Questions? <span class="text-gradient">Ask Us!</span></h2>
+            
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" class="form-control" placeholder="What's your question about?">
+                </div>
+                
+                <div class="form-group">
+                    <label for="question">Your Question</label>
+                    <textarea id="question" name="question" class="form-control" rows="6" placeholder="Please provide details about your inquiry" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    Submit Your Question <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section contact-us">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope text-accent"></i> Email: <a href="mailto:info@gamefusion.lk">info@gamefusion.lk</a></p>
+                <p><i class="fas fa-phone text-accent"></i> Phone: +94 76 123 4567</p>
+                <p><i class="fas fa-map-marker-alt text-accent"></i> Address: No. 01, Dalada Veediya, Kandy Road</p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section recommendations">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right text-accent"></i> Our Blog</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right text-accent"></i> Latest Products</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right text-accent"></i> Customer Support</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right text-accent"></i> About Us</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right text-accent"></i> Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for exclusive offers, new releases, and gaming news:</p>
+                <form action="#" method="POST" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 <span class="text-accent">GameFusion</span>. All Rights Reserved. | Designed with <i class="fas fa-heart text-accent"></i> for Gamers</p>
+        </div>
+    </footer>
+    
+    <script src="redo.js"></script>
+</body>
+
+</html>

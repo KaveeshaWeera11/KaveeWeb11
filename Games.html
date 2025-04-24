@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GameFusion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Games.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Gamefusion logo/GameFusion.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="Gamefusion-logo/GameFusion.png" alt="GameFusion Logo" class="logo">
+          </a>
+          
+        <!-- Menu button to toggle header -->
+        <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+        <!-- Navbar -->
+        <nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About_us.html">About Us</a></li>
+            <li><a href="./Upcoming_games.html">Upcoming Games</a></li>
+            <li class="dropdown">
+                <a href="./menu" class="dropdown-toggle">Accessories</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Consoles.html">Consoles</a></li>
+                    <li><a href="Peripherals.html">Peripherals</a></li>
+                </ul>
+            </li>
+            <li><a href="./Games.html">Games</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+            <li><a href="./order.html" class="cart-icon-link">
+                <img src="cart/shopping-cart.png" alt="Order Cart" class="cart-icon" >
+            </a>
+            </li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Games</h1>
+        <p class="info-text">Hover over the image to reveal more details.</p>
+
+        <div class="games-grid">
+            <!-- Game Cards Start -->
+            <div class="game-card">
+                <img src="Games/God of war.jpeg" alt="Game 1" class="game-image">
+                <div class="game-overlay">
+                    <h3>God of War</h3>
+                    <p>An exciting action-packed adventure game. Explore the world and complete thrilling missions!</p>
+                    <p><strong>Price: LKR 5,000</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Elden ring.jpg" alt="Game 2" class="game-image">
+                <div class="game-overlay">
+                    <h3>Elden Ring: Night Reign</h3>
+                    <p>A fantasy RPG that takes you on an epic journey across mystical lands.</p>
+                    <p><strong>Price: LKR 7,500</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Ghost Recon.jpg" alt="Game 3" class="game-image">
+                <div class="game-overlay">
+                    <h3>Ghost Recon: Wildlands</h3>
+                    <p>An immersive open-world shooter with stunning graphics and gameplay.</p>
+                    <p><strong>Price: LKR 6,000</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Forza.jpg" alt="Game 4" class="game-image">
+                <div class="game-overlay">
+                    <h3>Forza Horizon 5</h3>
+                    <p>A heart-pounding racing game with realistic tracks and cars.</p>
+                    <p><strong>Price: LKR 4,800</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Cluedo.jpeg" alt="Game 5" class="game-image">
+                <div class="game-overlay">
+                    <h3>Cluedo</h3>
+                    <p>A classic puzzle game that will test your problem-solving skills.</p>
+                    <p><strong>Price: LKR 3,500</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Fortnite.jpeg" alt="Game 6" class="game-image">
+                <div class="game-overlay">
+                    <h3>Fortnite</h3>
+                    <p>A highly competitive multiplayer battle royale.</p>
+                    <p><strong>Price: LKR 1,200</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Red dead redemption 2.jpg" alt="Game 7" class="game-image">
+                <div class="game-overlay">
+                    <h3>Red Dead Redemption 2</h3>
+                    <p>Discover an epic tale in this narrative-driven adventure game.</p>
+                    <p><strong>Price: LKR 8,000</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Cyberpunk.jpg" alt="Game 8" class="game-image">
+                <div class="game-overlay">
+                    <h3>Cyberpunk 2077</h3>
+                    <p>Engage in breathtaking space exploration in this sci-fi game.</p>
+                    <p><strong>Price: LKR 6,500</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/The witcher.jpg" alt="Game 9" class="game-image">
+                <div class="game-overlay">
+                    <h3>The Witcher: Wild Hunt</h3>
+                    <p>Fight your way through hordes of enemies in this action RPG.</p>
+                    <p><strong>Price: LKR 4,200</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/FC25.jpg" alt="Game 10" class="game-image">
+                <div class="game-overlay">
+                    <h3>FC 25</h3>
+                    <p>Manage your team in this thrilling football simulation game.</p>
+                    <p><strong>Price: LKR 3,000</strong></p>
+                </div>
+            </div>
+            <!-- Add more games -->
+            <div class="game-card">
+                <img src="Games/Hogwarts.jpg" alt="Game 11" class="game-image">
+                <div class="game-overlay">
+                    <h3>Hogwarts Legacy</h3>
+                    <p>Embark on a magical quest in this enchanting platformer.</p>
+                    <p><strong>Price: LKR 7,200</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Sherlock.jpeg" alt="Game 12" class="game-image">
+                <div class="game-overlay">
+                    <h3>Sherlock Holmes: Chapter One</h3>
+                    <p>A gripping detective mystery with challenging puzzles.</p>
+                    <p><strong>Price: LKR 5,500</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Resident Evil.jpg" alt="Game 13" class="game-image">
+                <div class="game-overlay">
+                    <h3>Resident Evil 4</h3>
+                    <p>Explore post-apocalyptic wastelands in this survival game.</p>
+                    <p><strong>Price: LKR 4,800</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/AOE.jpg" alt="Game 14" class="game-image">
+                <div class="game-overlay">
+                    <h3>Age of Empires</h3>
+                    <p>Conquer kingdoms in this epic real-time strategy game.</p>
+                    <p><strong>Price: LKR 3,700</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Diablo 4.jpg" alt="Game 15" class="game-image">
+                <div class="game-overlay">
+                    <h3>Diablo IV</h3>
+                    <p>Experience fast-paced action in this hack-and-slash game.</p>
+                    <p><strong>Price: LKR 6,000</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Black-ops-6.jpg" alt="Game 16" class="game-image">
+                <div class="game-overlay">
+                    <h3>Call of Duty: Black Ops 6</h3>
+                    <p>The Black Ops 6 Campaign provides dynamic moment-to-moment gameplay.</p>
+                    <p><strong>Price: LKR 7,800</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Devil mary cry.jpg" alt="Game 17" class="game-image">
+                <div class="game-overlay">
+                    <h3>Devil May Cry 5</h3>
+                    <p>Unleash chaos in this high-octane action game.</p>
+                    <p><strong>Price: LKR 4,900</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Unsolved.jpg" alt="Game 18" class="game-image">
+                <div class="game-overlay">
+                    <h3>Unsolved</h3>
+                    <p>Solve ancient mysteries in this hidden object puzzle game.</p>
+                    <p><strong>Price: LKR 2,200</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/Halo.jpg" alt="Game 19" class="game-image">
+                <div class="game-overlay">
+                    <h3>Halo: Infinite</h3>
+                    <p>Save the galaxy in this cooperative multiplayer shooter.</p>
+                    <p><strong>Price: LKR 5,700</strong></p>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="Games/GOT.jpg" alt="Game 20" class="game-image">
+                <div class="game-overlay">
+                    <h3>Ghost of Tsushima</h3>
+                    <p>Experience thrilling battles in this open-world combat game.</p>
+                    <p><strong>Price: LKR 6,800</strong></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section contact-us">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Phone: +94 XXXXXXXXX</p>
+                <p>Address: No. 01, Dalada Veediya, Kandy Road</p>
+            </div>
+    
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank" aria-label="Twitter" title="X (Twitter)">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Facebook" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="YouTube" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer-section recommendations">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Latest Products</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest news and exclusive offers:</p>
+                <form action="#" method="POST" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 GameFusion. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="redo.js"></script> 
+</body>
+</html>

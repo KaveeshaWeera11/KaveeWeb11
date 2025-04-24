@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GameFusion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Consoles.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="Gamefusion logo/GameFusion.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <img src="Gamefusion-logo/GameFusion.png" alt="GameFusion Logo" class="logo">
+          </a>
+          
+        <!-- Menu button to toggle header -->
+        <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+        <!-- Navbar -->
+        <nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About_us.html">About Us</a></li>
+            <li><a href="./Upcoming_games.html">Upcoming Games</a></li>
+            <li class="dropdown">
+                <a href="./menu" class="dropdown-toggle">Accessories</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Consoles.html">Consoles</a></li>
+                    <li><a href="Peripherals.html">Peripherals</a></li>
+                </ul>
+            </li>
+            <li><a href="./Games.html">Games</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+            <li><a href="./order.html" class="cart-icon-link">
+                <img src="cart/shopping-cart.png" alt="Order Cart" class="cart-icon" >
+            </a>
+            </li>
+        </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Section -->
+<main>
+    <section id="consoles">
+        <h1>Consoles</h1>
+        <div class="grid-container">
+            <div class="item">
+                <img src="Consoles page/PS5.jpg" alt="PlayStation 5">
+                <div class="overlay">
+                    <p>LKR 220,000</p>
+                </div>
+                <h3>PlayStation 5</h3>
+                <p>Experience lightning-fast load times and stunning visuals.</p>
+            </div>
+            <div class="item">
+                <img src="Consoles page/Xbox one X.jpg" alt="Xbox Series X">
+                <div class="overlay">
+                    <p>LKR 200,000</p>
+                </div>
+                <h3>Xbox Series X</h3>
+                <p>Powerful performance and immersive gameplay.</p>
+            </div>
+            <div class="item">
+                <img src="Consoles page/Nintendo.jpg" alt="Nintendo Switch">
+                <div class="overlay">
+                    <p>LKR 100,000</p>
+                </div>
+                <h3>Nintendo Switch</h3>
+                <p>Play anywhere with the versatile gaming console.</p>
+            </div> <!-- Missing closing tag added here -->
+            <div class="item">
+                <img src="Consoles page/rog-ally-social.jpg" alt="ASUS ROG ALLY">
+                <div class="overlay">
+                    <p>LKR 250,000</p>
+                </div>
+                <h3>ASUS ROG ALLY</h3>
+                <p>Portable gaming with high performance and stunning visuals.</p>
+            </div>
+            <div class="item">
+                <img src="Consoles page/Steam deck.jpg" alt="Steam Deck">
+                <div class="overlay">
+                    <p>LKR 180,000</p>
+                </div>
+                <h3>Steam Deck</h3>
+                <p>Play your PC games on the go with seamless portability.</p>
+            </div>
+            <div class="item">
+                <img src="Consoles page/oculus-quest-2.jpg" alt="Oculus Quest 2">
+                <div class="overlay">
+                    <p>LKR 120,000</p>
+                </div>
+                <h3>Oculus Quest 2</h3>
+                <p>Step into the world of VR with wireless freedom.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section contact-us">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Phone: +94 XXXXXXXXX</p>
+                <p>Address: No. 01, Dalada Veediya, Kandy Road</p>
+            </div>
+    
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank" aria-label="Twitter" title="X (Twitter)">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Facebook" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="YouTube" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer-section recommendations">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Latest Products</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest news and exclusive offers:</p>
+                <form action="#" method="POST" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 GameFusion. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="redo.js"></script>
+</body>
+</html>
