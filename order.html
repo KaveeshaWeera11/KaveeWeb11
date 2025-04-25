@@ -36,273 +36,273 @@
                 </li>
                 <li><a href="./Games.html">Games</a></li>
                 <li><a href="./FAQ.html">FAQ</a></li>
-                <li><a href="./order.html" class="cart-icon-link">
-                  <img src="cart/shopping-cart.png" alt="Order Cart" class="cart-icon">
-              </a>
-              </li>
+                <li><a href="./order.html" class="cart-icon-link" aria-label="View your cart">
+                    <img src="cart/shopping-cart.png" alt="" class="cart-icon">
+                </a></li>
             </ul>
         </nav>
     </header>
 
-  <main class="order-container">
-    <h1>Order Computer Parts</h1>
+    <main class="order-container">
+        <h1>Order Computer Parts</h1>
 
-<!-- 🧩 Product Categories -->
-<section class="product-section" id="processors">
-  <h2>Processors</h2>
-  <div class="product-list">
-    <div class="product-item">
-      <img src="order/intel-core-i9.png" alt="Intel Core i9">
-      <label>Intel Core i9</label>
-      <input type="number" min="0" value="0" data-name="Intel Core i9" data-price="500">
-    </div>
-    <div class="product-item">
-      <img src="order/ryzen-9.avif" alt="AMD Ryzen 9 5900X">
-      <label>AMD Ryzen 9 5900X</label>
-      <input type="number" min="0" value="0" data-name="AMD Ryzen 9 5900X" data-price="600">
-    </div>
-    <div class="product-item">
-      <img src="order/intel-core-i7.png" alt="Intel Core i7">
-      <label>Intel Core i7</label>
-      <input type="number" min="0" value="0" data-name="Intel Core i7" data-price="400">
-    </div>
-    <div class="product-item">
-      <img src="order/ryzen-7.avif" alt="AMD Ryzen 7 5800X">
-      <label>AMD Ryzen 7 5800X</label>
-      <input type="number" min="0" value="0" data-name="AMD Ryzen 7 5800X" data-price="450">
-    </div>
-    <div class="product-item">
-      <img src="order/intel-core-i5.png" alt="Intel Core i5">
-      <label>Intel Core i5</label>
-      <input type="number" min="0" value="0" data-name="Intel Core i5" data-price="300">
-    </div>
-    <div class="product-item">
-      <img src="order/ryzen-5.avif" alt="AMD Ryzen 5 5600X">
-      <label>AMD Ryzen 5 5600X</label>
-      <input type="number" min="0" value="0" data-name="AMD Ryzen 5 5600X" data-price="350">
-    </div>
-  </div>
-</section>
+        <!-- 🧩 Product Categories -->
+        <section class="product-section" id="processors">
+            <h2>Processors</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="order/intel-core-i9.png" alt="Intel Core i9 processor">
+                    <label for="intel-core-i9">Intel Core i9</label>
+                    <input type="number" min="0" value="0" id="intel-core-i9" data-name="Intel Core i9" data-price="500">
+                </div>
+                <div class="product-item">
+                    <img src="order/ryzen-9.avif" alt="AMD Ryzen 9 5900X processor">
+                    <label for="amd-ryzen-9">AMD Ryzen 9 5900X</label>
+                    <input type="number" min="0" value="0" id="amd-ryzen-9" data-name="AMD Ryzen 9 5900X" data-price="600">
+                </div>
+                <div class="product-item">
+                    <img src="order/intel-core-i7.png" alt="Intel Core i7 processor">
+                    <label for="intel-core-i7">Intel Core i7</label>
+                    <input type="number" min="0" value="0" id="intel-core-i7" data-name="Intel Core i7" data-price="400">
+                </div>
+                <div class="product-item">
+                    <img src="order/ryzen-7.avif" alt="AMD Ryzen 7 5800X processor">
+                    <label for="amd-ryzen-7">AMD Ryzen 7 5800X</label>
+                    <input type="number" min="0" value="0" id="amd-ryzen-7" data-name="AMD Ryzen 7 5800X" data-price="450">
+                </div>
+                <div class="product-item">
+                    <img src="order/intel-core-i5.png" alt="Intel Core i5 processor">
+                    <label for="intel-core-i5">Intel Core i5</label>
+                    <input type="number" min="0" value="0" id="intel-core-i5" data-name="Intel Core i5" data-price="300">
+                </div>
+                <div class="product-item">
+                    <img src="order/ryzen-5.avif" alt="AMD Ryzen 5 5600X processor">
+                    <label for="amd-ryzen-5">AMD Ryzen 5 5600X</label>
+                    <input type="number" min="0" value="0" id="amd-ryzen-5" data-name="AMD Ryzen 5 5600X" data-price="350">
+                </div>
+            </div>
+        </section>
 
-<section class="product-section" id="graphics-cards">
-  <h2>Graphics Cards</h2>
-  <div class="product-list">
-    <div class="product-item">
-      <img src="order/nvidia-rtx-4090.jpg" alt="NVIDIA RTX 4090">
-      <label>NVIDIA RTX 4090</label>
-      <input type="number" min="0" value="0" data-name="NVIDIA RTX 4090" data-price="1500">
-    </div>
-    <div class="product-item">
-      <img src="order/amd-radeon-rx-7900-xt.jpg" alt="AMD Radeon RX 7900 XT">
-      <label>AMD Radeon RX 7900 XT</label>
-      <input type="number" min="0" value="0" data-name="AMD Radeon RX 7900 XT" data-price="1200">
-    </div>
-    <div class="product-item">
-      <img src="order/nvidia-rtx-3080.jpg" alt="NVIDIA RTX 3080">
-      <label>NVIDIA RTX 3080</label>
-      <input type="number" min="0" value="0" data-name="NVIDIA RTX 3080" data-price="700">
-    </div>
-    <div class="product-item">
-      <img src="order/amd-radeon-rx-6800-xt.jpg" alt="AMD Radeon RX 6800 XT">
-      <label>AMD Radeon RX 6800 XT</label>
-      <input type="number" min="0" value="0" data-name="AMD Radeon RX 6800 XT" data-price="900">
-    </div>
-    <div class="product-item">
-      <img src="order/nvidia-rtx-3070.jpg" alt="NVIDIA RTX 3070">
-      <label>NVIDIA RTX 3070</label>
-      <input type="number" min="0" value="0" data-name="NVIDIA RTX 3070" data-price="500">
-    </div>
-    <div class="product-item">
-      <img src="order/amd-radeon-rx-6600-xt.jpg" alt="AMD Radeon RX 6600 XT">
-      <label>AMD Radeon RX 6600 XT</label>
-      <input type="number" min="0" value="0" data-name="AMD Radeon RX 6600 XT" data-price="400">
-    </div>
-  </div>
-</section>
+        <section class="product-section" id="graphics-cards">
+            <h2>Graphics Cards</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="order/nvidia-rtx-4090.jpg" alt="NVIDIA RTX 4090 graphics card">
+                    <label for="nvidia-rtx-4090">NVIDIA RTX 4090</label>
+                    <input type="number" min="0" value="0" id="nvidia-rtx-4090" data-name="NVIDIA RTX 4090" data-price="1500">
+                </div>
+                <div class="product-item">
+                    <img src="order/amd-radeon-rx-7900-xt.jpg" alt="AMD Radeon RX 7900 XT graphics card">
+                    <label for="amd-radeon-rx-7900-xt">AMD Radeon RX 7900 XT</label>
+                    <input type="number" min="0" value="0" id="amd-radeon-rx-7900-xt" data-name="AMD Radeon RX 7900 XT" data-price="1200">
+                </div>
+                <div class="product-item">
+                    <img src="order/nvidia-rtx-3080.jpg" alt="NVIDIA RTX 3080 graphics card">
+                    <label for="nvidia-rtx-3080">NVIDIA RTX 3080</label>
+                    <input type="number" min="0" value="0" id="nvidia-rtx-3080" data-name="NVIDIA RTX 3080" data-price="700">
+                </div>
+                <div class="product-item">
+                    <img src="order/amd-radeon-rx-6800-xt.jpg" alt="AMD Radeon RX 6800 XT graphics card">
+                    <label for="amd-radeon-rx-6800-xt">AMD Radeon RX 6800 XT</label>
+                    <input type="number" min="0" value="0" id="amd-radeon-rx-6800-xt" data-name="AMD Radeon RX 6800 XT" data-price="900">
+                </div>
+                <div class="product-item">
+                    <img src="order/nvidia-rtx-3070.jpg" alt="NVIDIA RTX 3070 graphics card">
+                    <label for="nvidia-rtx-3070">NVIDIA RTX 3070</label>
+                    <input type="number" min="0" value="0" id="nvidia-rtx-3070" data-name="NVIDIA RTX 3070" data-price="500">
+                </div>
+                <div class="product-item">
+                    <img src="order/amd-radeon-rx-6600-xt.jpg" alt="AMD Radeon RX 6600 XT graphics card">
+                    <label for="amd-radeon-rx-6600-xt">AMD Radeon RX 6600 XT</label>
+                    <input type="number" min="0" value="0" id="amd-radeon-rx-6600-xt" data-name="AMD Radeon RX 6600 XT" data-price="400">
+                </div>
+            </div>
+        </section>
 
-<section class="product-section" id="motherboards">
-  <h2>Motherboards</h2>
-  <div class="product-list">
-    <div class="product-item">
-      <img src="order/rog-strix-z590-e.png" alt="ASUS ROG Strix Z590-E">
-      <label>ASUS ROG Strix Z590-E</label>
-      <input type="number" min="0" value="0" data-name="ASUS ROG Strix Z590-E" data-price="300">
-    </div>
-    <div class="product-item">
-      <img src="order/msi-mag-b550-tomahawk.png" alt="MSI MAG B550 TOMAHAWK">
-      <label>MSI MAG B550 TOMAHAWK</label>
-      <input type="number" min="0" value="0" data-name="MSI MAG B550 TOMAHAWK" data-price="200">
-    </div>
-    <div class="product-item">
-      <img src="order/gigabyte-z490-aorus-xtreme-waterforce.png" alt="Gigabyte Z490 AORUS XTREME WATERFORCE">
-      <label>Gigabyte Z490 AORUS XTREME WATERFORCE</label>
-      <input type="number" min="0" value="0" data-name="Gigabyte Z490 AORUS XTREME WATERFORCE" data-price="700">
-    </div>
-    <div class="product-item">
-      <img src="order/asrock-b450m-pro4.png" alt="ASRock B450M Pro4">
-      <label>ASRock B450M Pro4</label>
-      <input type="number" min="0" value="0" data-name="ASRock B450M Pro4" data-price="80">
-    </div>
-    <div class="product-item">
-      <img src="order/z490-edge-wifi.png" alt="MSI MPG Z490 GAMING EDGE WIFI">
-      <label>MSI MPG Z490 GAMING EDGE WIFI</label>
-      <input type="number" min="0" value="0" data-name="MSI MPG Z490 GAMING EDGE WIFI" data-price="250">
-    </div>
-    <div class="product-item">
-      <img src="order/tuf-gaming-b550-plus.webp" alt="ASUS TUF Gaming B550-PLUS">
-      <label>ASUS TUF Gaming B550-PLUS</label>
-      <input type="number" min="0" value="0" data-name="ASUS TUF Gaming B550-PLUS" data-price="160">
-    </div>
-  </div>
-</section>
+        <section class="product-section" id="motherboards">
+            <h2>Motherboards</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="order/rog-strix-z590-e.png" alt="ASUS ROG Strix Z590-E motherboard">
+                    <label for="asus-rog-strix-z590-e">ASUS ROG Strix Z590-E</label>
+                    <input type="number" min="0" value="0" id="asus-rog-strix-z590-e" data-name="ASUS ROG Strix Z590-E" data-price="300">
+                </div>
+                <div class="product-item">
+                    <img src="order/msi-mag-b550-tomahawk.png" alt="MSI MAG B550 TOMAHAWK motherboard">
+                    <label for="msi-mag-b550-tomahawk">MSI MAG B550 TOMAHAWK</label>
+                    <input type="number" min="0" value="0" id="msi-mag-b550-tomahawk" data-name="MSI MAG B550 TOMAHAWK" data-price="200">
+                </div>
+                <div class="product-item">
+                    <img src="order/gigabyte-z490-aorus-xtreme-waterforce.png" alt="Gigabyte Z490 AORUS XTREME WATERFORCE motherboard">
+                    <label for="gigabyte-z490-aorus-xtreme-waterforce">Gigabyte Z490 AORUS XTREME WATERFORCE</label>
+                    <input type="number" min="0" value="0" id="gigabyte-z490-aorus-xtreme-waterforce" data-name="Gigabyte Z490 AORUS XTREME WATERFORCE" data-price="700">
+                </div>
+                <div class="product-item">
+                    <img src="order/asrock-b450m-pro4.png" alt="ASRock B450M Pro4 motherboard">
+                    <label for="asrock-b450m-pro4">ASRock B450M Pro4</label>
+                    <input type="number" min="0" value="0" id="asrock-b450m-pro4" data-name="ASRock B450M Pro4" data-price="80">
+                </div>
+                <div class="product-item">
+                    <img src="order/z490-edge-wifi.png" alt="MSI MPG Z490 GAMING EDGE WIFI motherboard">
+                    <label for="msi-mpg-z490-gaming-edge-wifi">MSI MPG Z490 GAMING EDGE WIFI</label>
+                    <input type="number" min="0" value="0" id="msi-mpg-z490-gaming-edge-wifi" data-name="MSI MPG Z490 GAMING EDGE WIFI" data-price="250">
+                </div>
+                <div class="product-item">
+                    <img src="order/tuf-gaming-b550-plus.webp" alt="ASUS TUF Gaming B550-PLUS motherboard">
+                    <label for="asus-tuf-gaming-b550-plus">ASUS TUF Gaming B550-PLUS</label>
+                    <input type="number" min="0" value="0" id="asus-tuf-gaming-b550-plus" data-name="ASUS TUF Gaming B550-PLUS" data-price="160">
+                </div>
+            </div>
+        </section>
 
-<section class="product-section" id="memory">
-  <h2>Memory (RAM)</h2>
-  <div class="product-list">
-    <div class="product-item">
-      <img src="order/corsair-vengeance-16gb-wallpaper.jpg" alt="Corsair Vengeance 16GB">
-      <label>Corsair Vengeance 16GB</label>
-      <input type="number" min="0" value="0" data-name="Corsair Vengeance 16GB" data-price="80">
-    </div>
-    <div class="product-item">
-      <img src="order/g-skill-trident-z-32gb.webp" alt="G.SKILL Trident Z 32GB">
-      <label>G.SKILL Trident Z 32GB</label>
-      <input type="number" min="0" value="0" data-name="G.SKILL Trident Z 32GB" data-price="160">
-    </div>
-    <div class="product-item">
-      <img src="order/kingston-hyperx-fury-16gb.jpg" alt="Kingston HyperX Fury 16GB">
-      <label>Kingston HyperX Fury 16GB</label>
-      <input type="number" min="0" value="0" data-name="Kingston HyperX Fury 16GB" data-price="70">
-    </div>
-    <div class="product-item">
-      <img src="order/crucial-ballistix-8gb.jpg" alt="Crucial Ballistix 8GB">
-      <label>Crucial Ballistix 8GB</label>
-      <input type="number" min="0" value="0" data-name="Crucial Ballistix 8GB" data-price="40">
-    </div>
-  </div>
-</section>
+        <section class="product-section" id="memory">
+            <h2>Memory (RAM)</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="order/corsair-vengeance-16gb-wallpaper.jpg" alt="Corsair Vengeance 16GB RAM">
+                    <label for="corsair-vengeance-16gb">Corsair Vengeance 16GB</label>
+                    <input type="number" min="0" value="0" id="corsair-vengeance-16gb" data-name="Corsair Vengeance 16GB" data-price="80">
+                </div>
+                <div class="product-item">
+                    <img src="order/g-skill-trident-z-32gb.webp" alt="G.SKILL Trident Z 32GB RAM">
+                    <label for="g-skill-trident-z-32gb">G.SKILL Trident Z 32GB</label>
+                    <input type="number" min="0" value="0" id="g-skill-trident-z-32gb" data-name="G.SKILL Trident Z 32GB" data-price="160">
+                </div>
+                <div class="product-item">
+                    <img src="order/kingston-hyperx-fury-16gb.jpg" alt="Kingston HyperX Fury 16GB RAM">
+                    <label for="kingston-hyperx-fury-16gb">Kingston HyperX Fury 16GB</label>
+                    <input type="number" min="0" value="0" id="kingston-hyperx-fury-16gb" data-name="Kingston HyperX Fury 16GB" data-price="70">
+                </div>
+                <div class="product-item">
+                    <img src="order/crucial-ballistix-8gb.jpg" alt="Crucial Ballistix 8GB RAM">
+                    <label for="crucial-ballistix-8gb">Crucial Ballistix 8GB</label>
+                    <input type="number" min="0" value="0" id="crucial-ballistix-8gb" data-name="Crucial Ballistix 8GB" data-price="40">
+                </div>
+            </div>
+        </section>
 
-<section class="product-section" id="storage">
-  <h2>Storage Devices</h2>
-  <div class="product-list">
-    <div class="product-item">
-      <img src="order/samsung-970.webp" alt="Samsung 970 EVO 1TB">
-      <label>Samsung 970 EVO 1TB</label>
-      <input type="number" min="0" value="0" data-name="Samsung 970 EVO 1TB" data-price="120">
-    </div>
-    <div class="product-item">
-      <img src="order/western-digital-wd-black-sn850-1tb.jpg" alt="Western Digital WD Black SN850 1TB">
-      <label>Western Digital WD Black SN850 1TB</label>
-      <input type="number" min="0" value="0" data-name="Western Digital WD Black SN850 1TB" data-price="130">
-    </div>
-    <div class="product-item">
-      <img src="order/seagate-barracuda-2tb.jpg" alt="Seagate Barracuda 2TB">
-      <label>Seagate Barracuda 2TB</label>
-      <input type="number" min="0" value="0" data-name="Seagate Barracuda 2TB" data-price="70">
-    </div>
-    <div class="product-item">
-      <img src="order/crucial-p5-500gb.jpg" alt="Crucial P5 500GB">
-      <label>Crucial P5 500GB</label>
-      <input type="number" min="0" value="0" data-name="Crucial P5 500GB" data-price="50">
-    </div>
-    <div class="product-item">
-      <img src="order/kingston-nv1-1tb.webp" alt="Kingston NV1 1TB">
-      <label>Kingston NV1 1TB</label>
-      <input type="number" min="0" value="0" data-name="Kingston NV1 1TB" data-price="90">
-    </div>
-    <div class="product-item">
-      <img src="order/adata-xpg-sx8200-1tb.jpg" alt="ADATA XPG SX8200 1TB">
-      <label>ADATA XPG SX8200 1TB</label>
-      <input type="number" min="0" value="0" data-name="ADATA XPG SX8200 1TB" data-price="110">
-    </div>
-  </div>
-</section>
+        <section class="product-section" id="storage">
+            <h2>Storage Devices</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="order/samsung-970.webp" alt="Samsung 970 EVO 1TB SSD">
+                    <label for="samsung-970-evo-1tb">Samsung 970 EVO 1TB</label>
+                    <input type="number" min="0" value="0" id="samsung-970-evo-1tb" data-name="Samsung 970 EVO 1TB" data-price="120">
+                </div>
+                <div class="product-item">
+                    <img src="order/western-digital-wd-black-sn850-1tb.jpg" alt="Western Digital WD Black SN850 1TB SSD">
+                    <label for="wd-black-sn850-1tb">Western Digital WD Black SN850 1TB</label>
+                    <input type="number" min="0" value="0" id="wd-black-sn850-1tb" data-name="Western Digital WD Black SN850 1TB" data-price="130">
+                </div>
+                <div class="product-item">
+                    <img src="order/seagate-barracuda-2tb.jpg" alt="Seagate Barracuda 2TB HDD">
+                    <label for="seagate-barracuda-2tb">Seagate Barracuda 2TB</label>
+                    <input type="number" min="0" value="0" id="seagate-barracuda-2tb" data-name="Seagate Barracuda 2TB" data-price="70">
+                </div>
+                <div class="product-item">
+                    <img src="order/crucial-p5-500gb.jpg" alt="Crucial P5 500GB SSD">
+                    <label for="crucial-p5-500gb">Crucial P5 500GB</label>
+                    <input type="number" min="0" value="0" id="crucial-p5-500gb" data-name="Crucial P5 500GB" data-price="50">
+                </div>
+                <div class="product-item">
+                    <img src="order/kingston-nv1-1tb.webp" alt="Kingston NV1 1TB SSD">
+                    <label for="kingston-nv1-1tb">Kingston NV1 1TB</label>
+                    <input type="number" min="0" value="0" id="kingston-nv1-1tb" data-name="Kingston NV1 1TB" data-price="90">
+                </div>
+                <div class="product-item">
+                    <img src="order/adata-xpg-sx8200-1tb.jpg" alt="ADATA XPG SX8200 1TB SSD">
+                    <label for="adata-xpg-sx8200-1tb">ADATA XPG SX8200 1TB</label>
+                    <input type="number" min="0" value="0" id="adata-xpg-sx8200-1tb" data-name="ADATA XPG SX8200 1TB" data-price="110">
+                </div>
+            </div>
+        </section>
 
-    <!-- 🛒 Cart Table -->
-    <section class="cart-section">
-      <h2>Your Cart</h2>
-      <table id="cart-table">
-        <thead>
-          <tr>
-            <th>Item</th>
-            <th>Qty</th>
-            <th>Price</th>
-            <th>Subtotal</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-        <tfoot>
-          <tr>
-            <td colspan="3"><strong>Total</strong></td>
-            <td id="total-price">$0</td>
-          </tr>
-        </tfoot>
-      </table>
-    </section>
+        <!-- 🛒 Cart Table -->
+        <section class="cart-section">
+            <h2>Your Cart</h2>
+            <table id="cart-table">
+                <caption>Summary of selected computer parts in your cart</caption>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total</strong></td>
+                        <td id="total-price">$0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
 
-    <!-- 💾 Favourites + Buy -->
-    <div class="action-buttons">
-      <button id="save-fav">Add to Favourites</button>
-      <button id="apply-fav">Apply Favourites</button>
-      <button id="buy-now">Buy Now</button>
-    </div>
-  </main>
-
-<!-- Footer Section -->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-section contact-us">
-            <h3>Contact Us</h3>
-            <p>Email: <a href="/cdn-cgi/l/email-protection#84edeae2ebc4e1fce5e9f4e8e1aae7ebe9"><span class="__cf_email__" data-cfemail="dfb6b1b9b09fbaa7beb2afb3baf1bcb0b2">[email&#160;protected]</span></a></p>
-            <p>Phone: +94 XXXXXXXXX</p>
-            <p>Address: No. 01, Dalada Veediya, Kandy Road</p>
+        <!-- 💾 Favourites + Buy -->
+        <div class="action-buttons">
+            <button id="save-fav">Add to Favourites</button>
+            <button id="apply-fav">Apply Favourites</button>
+            <button id="buy-now">Buy Now</button>
         </div>
+    </main>
 
-        <div class="footer-section social-media">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href="#" target="_blank" aria-label="Twitter" title="X (Twitter)">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" target="_blank" aria-label="Instagram" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" target="_blank" aria-label="Facebook" title="Facebook">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="#" target="_blank" aria-label="YouTube" title="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section contact-us">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="/cdn-cgi/l/email-protection#84edeae2ebc4e1fce5e9f4e8e1aae7ebe9"><span class="__cf_email__" data-cfemail="dfb6b1b9b09fbaa7beb2afb3baf1bcb0b2">[email&#160;protected]</span></a></p>
+                <p>Phone: +94 XXXXXXXXX</p>
+                <p>Address: No. 01, Dalada Veediya, Kandy Road</p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank" aria-label="Twitter" title="X (Twitter)">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Facebook" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="YouTube" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section recommendations">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Latest Products</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest news and exclusive offers:</p>
+                <form action="#" method="POST" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
 
-        <div class="footer-section recommendations">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#">Our Blog</a></li>
-                <li><a href="#">Latest Products</a></li>
-                <li><a href="#">Customer Support</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GameFusion. All Rights Reserved.</p>
         </div>
+    </footer>
 
-        <div class="footer-section newsletter">
-            <h3>Stay Updated</h3>
-            <p>Subscribe to our newsletter for the latest news and exclusive offers:</p>
-            <form action="#" method="POST" class="newsletter-form">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <p>&copy; 2025 GameFusion. All Rights Reserved.</p>
-    </div>
-</footer>
-
-  <script src="order.js"></script>
-  <script src="redo.js"></script>
+    <script src="order.js"></script>
+    <script src="redo.js"></script>
 </body>
-</html>
+</html> 
